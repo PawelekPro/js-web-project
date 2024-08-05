@@ -8,8 +8,8 @@ function addTodo(event) {
     event.preventDefault(); // Zapobiegamy przeładowaniu strony
     console.log("Button clicked");
 
-    const todoText = todoInput.value.trim(); // Pobieramy i przycinamy tekst z inputa
-    if (todoText === '') return; // Nie dodajemy pustego zadania
+    const todoText = todoInput.value.trim();
+    if (todoText === '') return;
 
     const todoItem = document.createElement('li');
     todoItem.textContent = todoText;
